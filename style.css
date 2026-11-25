@@ -81,3 +81,49 @@ nav {
 .hero-content p {
     margin-bottom: 20px;
 }
+
+.btn {
+    display: inline-block;
+    background-color: #6D4AFF;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #5033CC;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 8%;
+    }
+    .hero-content h1 {
+        font-size: 30px;
+    }
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: #111827;
+    color: white;
+}
+body.dark-mode .hero {
+    background-color: #1F2937;
+}
+body.dark-mode .hero-content h1 span {
+    color: #A78BFA;
+}
+
