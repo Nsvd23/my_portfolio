@@ -127,3 +127,123 @@ body.dark-mode .hero-content h1 span {
     color: #A78BFA;
 }
 
+/* ===== SECTIONS ===== */
+section {
+    padding: 70px 10%;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.about {
+    text-align: center;
+    background-color: white;
+}
+.about p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #64748B;
+}
+.skills {
+    background-color: #F8FAFC;
+    text-align: center;
+}
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.skill-list span {
+    background-color: #EEE9FF;
+    color: #5033CC;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* ===== PROJECTS ===== */
+.projects {
+    text-align: center;
+}
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.project-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #6D4AFF;
+}
+.project-card p {
+    color: #64748B;
+    margin-bottom: 15px;
+}
+.project-card a {
+    color: #6D4AFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== CONTACT & FOOTER ===== */
+.contact {
+    text-align: center;
+    background-color: #EEE9FF;
+}
+.contact a {
+    color: #6D4AFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* ===== RESPONSIVE: the rest ===== */
+@media (max-width: 768px) {
+    section {
+        padding: 50px 8%;
+    }
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+body.dark-mode .about,
+body.dark-mode .projects {
+    background-color: #1F2937;
+}
+body.dark-mode .skills {
+    background-color: #273449;
+}
+body.dark-mode .contact {
+    background-color: #312E81;
+}
+body.dark-mode .project-card {
+    background-color: #374151;
+    color: white;
+}
+body.dark-mode .project-card p,
+body.dark-mode .about p {
+    color: #D1D5DB;
+}
